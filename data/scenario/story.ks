@@ -1,7 +1,7 @@
 
 ;ボイス設定
-[voconfig sebuf="5" name="チョロミ" vostorage="{number}c.ogg" number="1"]
-[voconfig sebuf="5" name="めのー" vostorage="{number}m.ogg" number="1"]
+[voconfig sebuf="5" name="チョロミ" vostorage="C{number}.ogg" number="1"]
+[voconfig sebuf="5" name="めのー" vostorage="M{number}.ogg" number="1"]
 [vostart]
 
 ;初期設定
@@ -14,15 +14,12 @@
 
 ;シーンＡ
 
-
 ;動画「douga1」
-;[動画再生 str="hana.webm"]
-
+[動画再生 str="hana.webm"]
 
 ;シーンＢ
 
-
-;[失敗]
+[bg storage="black.png" time="10"]
 
 [name_show]
 #チョロミ
@@ -34,7 +31,7 @@
 ちょっとお待ちください……。[p]
 
 ;立ち絵
-[暗転閉 haikei="white.png" time="1000"]
+[暗転閉 haikei="002-01.png" time="1000"]
 [暗転開 time="1000"]
 
 #めのー
@@ -47,8 +44,12 @@
 
 [実績消]
 
+[立ち絵チョロミ困り]
+
 #チョロミ
 そんなっ！　それじゃあスポンサーとの約束の視聴者１０万人はどうなっちゃうの！？[p]
+
+[立ち絵両困り]
 
 #めのー
 それは……。[p]
@@ -163,9 +164,21 @@
 
 ;シーンＤ
 
+
 ;BGM シーンＤ
 [BGM storage="sceneD.ogg"]
 
+[name_hide]
+#チョロミ
+[チョロミカットイン]
+[l]
+
+#チョロミ
+[l]
+
+#チョロミ
+[失敗]
+[l]
 
 ;シーンＥ
 

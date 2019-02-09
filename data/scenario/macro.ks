@@ -13,10 +13,10 @@
 
 ;BGM調整
 [macro name="BGMvoldn"]
-[bgmopt volume=30]
+[bgmopt volume=10]
 [endmacro]
 [macro name="BGMvolup"]
-[bgmopt volume=70]
+[bgmopt volume=50]
 [endmacro]
 
 ;SE調整
@@ -36,6 +36,19 @@
 
 ;	演出関連
 
+[macro name="立ち絵通常"]
+[bg storage="002-01.png" time="%time|500"]
+[endmacro]
+[macro name="立ち絵チョロミ困り"]
+[bg storage="002-02.png" time="%time|500"]
+[endmacro]
+[macro name="立ち絵めのー困り"]
+[bg storage="002-03.png" time="%time|500"]
+[endmacro]
+[macro name="立ち絵両困り"]
+[bg storage="002-04.png" time="%time|500"]
+[endmacro]
+
 ;実績表示
 [macro name="実績出"]
 ;[image name="trf" storage="ArchivementFrame.png" layer=0 x=1280 y=-200 visible=true]
@@ -45,6 +58,19 @@
 [macro name="実績消"]
 [anim name="trf" left=1280 top=-200 time=500]
 ;[freeimage layer=0]
+[endmacro]
+
+[macro name="チョロミカットイン"]
+[image name="cutin" storage="CutInChoromi.png" layer=1 x=30 y=-10 visible=true zindex=100]
+[anim name="cutin" left=0 top=0 time=500]
+[anim name="cutin" left=0 top=0 time=500]
+[anim name="cutin" opacity=0 time=500]
+[endmacro]
+[macro name="めのーカットイン"]
+[image name="cutin" storage="CutInMeno.png" layer=1 x=30 y=-10 visible=true zindex=100]
+[anim name="cutin" left=0 top=0 time=500]
+[anim name="cutin" left=0 top=0 time=500]
+[anim name="cutin" opacity=0 time=500]
 [endmacro]
 
 [macro name="失敗"]
