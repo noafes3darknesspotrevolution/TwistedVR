@@ -36,6 +36,24 @@
 
 ;	演出関連
 
+;実績表示
+[macro name="実績出"]
+[image name="trf" storage="ArchivementFrame.png" layer=0 x=1280 y=-200 visible=true]
+[anim name="trf" left=750 top=10 time=300]
+[endmacro]
+[macro name="実績消"]
+[anim name="trf" left=1280 top=-200 time=500]
+;[freeimage layer=0]
+[endmacro]
+
+[macro name="失敗"]
+[image name="fail" storage="Failure.png" layer=0 x=0 y=-720 width=1280 height=720 time=500 wait=false visible=true]
+[anim name="fail" width=1280 height=720 left=0 top=0 time=500]
+[anim name="fail" left=0 top=0 time=1000]
+[anim name="fail" opacity=0 time=500]
+;[anim name="fail" width=2560 height=1440 left=-640 top=-360 opacity=0 time=200]
+[endmacro]
+
 ;カメラ操作
 ;カメラリセット
 ;カメラ操作後には必ず行うこと
