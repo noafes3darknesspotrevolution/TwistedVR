@@ -9,17 +9,16 @@
 [scenario_init haikei="white.png"]
 
 [jump target="*dbg"]
-*dbg
 
 
 ;シーンＡ
 
 ;動画「douga1」
-[動画再生 str="hana.webm"]
+[動画再生 str="douga1.webm" volume=30]
 
 ;シーンＢ
 
-[bg storage="black.png" time="10"]
+[bg storage="black.png" time="500"]
 
 [name_show]
 #チョロミ
@@ -60,16 +59,16 @@
 #チョロミ
 この俺、チョロミは焦っていた。[p]
 
-#チョロミ
-人気低迷によるチョロン☆めろん解散の危機……。[p]
-
 ;実績：恐怖
 [実績出 img="ArchivementFear.png"]
 
 #チョロミ
-ユニット存続の為にスポンサーとある約束を交わしていたからだ。[p]
+人気低迷によるチョロン☆めろん解散の危機……。[p]
 
 [実績消]
+
+#チョロミ
+ユニット存続の為にスポンサーとある約束を交わしていたからだ。[p]
 
 #チョロミ
 視聴者１０万人[p]
@@ -89,6 +88,8 @@
 #めのー
 復旧が終わっても日付が変わるまで１時間程しかライブの時間が取れないだろう。[p]
 
+[立ち絵チョロミ困り]
+
 #めのー
 僕たち……ゲフンゲフン、私達はもう立ち止まるわけにはいかないわ。[p]
 
@@ -97,6 +98,8 @@
 
 #めのー
 お互いあらゆる手段を使ってライブ再開の予告を宣伝しますわよ！[p]
+
+[立ち絵通常]
 
 #チョロミ
 うん！　わかった！　私も色んな人に呼び掛けてみるね！[p]
@@ -112,12 +115,17 @@
 
 [BGMfadestop]
 
+[wait time="1000"]
+
+;SE:通信切れる音
+[SE storage="se1.ogg"]
+
 [実績消]
-[暗転閉 haikei="black.png" time="2000"]
+[暗転閉 haikei="cman.png" time="3000"]
 
 ;シーンＣ
 
-[暗転開 time="10"]
+[暗転開 time="100"]
 
 ;BGM シーンＣ
 [BGM storage="sceneC.ogg"]
@@ -126,7 +134,7 @@
 わぁぁぁぁぁぁあぁぁぁぁっぁぁぁぁぁ！！！無理無理無理無理無理！！むーりぃー……[p]
 
 #チョロミ
-あと数時間で視聴者１０万人なんて無理やろぉぉ！？[p]
+あと数時間で視聴者１０万人なんて絶ッ対無理やろぉぉ！？[p]
 
 #チョロミ
 さっきのライブ中でも半分届いてなかったんだから無理に決まってるやん！[p]
@@ -135,13 +143,13 @@
 えっっ、えッッッ？　どうすんの？　せっっかくの金づるを失うことになるんやぞ！[p]
 
 #チョロミ
-これまでネカマになってキモオタから大金巻き上げてたのになんでこうなったんやぁぁ……。[p]
+これまでネカマになってキモオタから大金巻き上げてたのになんでこうなるんやぁぁ……。[p]
 
 #チョロミ
 めのーちゃんには悪いけどワイは金がすべてなんや。俺はどんな手段をとってでも目標達成させてもらうで！[p]
 
 [name_hide]
-[場面転換閉 haikei="white.png"]
+[場面転換閉 haikei="mman.png"]
 [場面転換開]
 [name_show]
 
@@ -162,41 +170,91 @@
 
 [stopbgm]
 
+*dbg
+
+[暗転閉 haikei="10.png" time="1000"]
+[暗転開 time="10"]
+
 ;シーンＤ
 
-
 ;BGM シーンＤ
-[BGM storage="sceneD.ogg"]
+[BGM storage="sceneD.ogg" volume=10]
 
 [name_hide]
+[layopt layer=message0 visible=false]
+
 #チョロミ
 [チョロミカットイン]
 [l]
 
 #チョロミ
+[作戦 storage="sksn01.png"]
 [l]
 
 #チョロミ
 [失敗]
 [l]
 
+[レイヤ開放]
+
+#めのー
+[めのーカットイン]
+[作戦 storage="sksn02.png"]
+[l]
+
+#めのー
+[失敗]
+[l]
+
+[レイヤ開放]
+
+#チョロミ
+[チョロミカットイン]
+[作戦 storage="sksn03.png"]
+[l]
+
+#チョロミ
+[失敗]
+[l]
+
+[レイヤ開放]
+
+#めのー
+[めのーカットイン]
+[作戦 storage="sksn04.png"]
+[l]
+
+#めのー
+[失敗]
+[l]
+
+[レイヤ開放]
+
 ;シーンＥ
 
 [暗転閉 haikei="black.png" time="1000"]
 [暗転開 time="10"]
 
-[stopbgm]
+[BGMfadestop]
 
 ;タイマー
+[bg storage="black.png" time="10"]
 
-[暗転閉 haikei="black.png" time="1000"]
+
+
+[暗転閉 haikei="002-01.png" time="1000"]
+[layopt layer=message0 visible=true]
 [暗転開 time="10"]
 
 #めのー
 ……どうでした？[p]
 
+[立ち絵チョロミ困り]
+
 #チョロミ
 全然だめだったよぉ……めのーちゃんは？[p]
+
+[立ち絵両困り]
 
 #めのー
 私の方も全然だめでしたわ……。[p]
@@ -212,6 +270,8 @@
 
 #めのー
 …………。[p]
+
+[立ち絵チョロミ困り]
 
 #めのー
 ……もしかしたらこれが最後になるかもしれないので、チョロミちゃんに伝えておきたいことがありますわ……。[p]
@@ -230,6 +290,9 @@
 [bgmovie storage="fuwa_back.webm"]
 [image storage="5.png" layer=0 x=0 y=0 time=1000 visible=true zindex=0]
 [layermode_movie video="fuwa_fore.webm" mode="screen"]
+
+;SE:シャララ
+[SE storage="se5.ogg"]
 
 ;BGM シーン百合
 [BGM storage="piano.ogg"]
@@ -291,15 +354,17 @@
 [free_layermode]
 [stop_bgmovie]
 
+[name_hide]
 [暗転開 time="10"]
 
 ;シーンＦ
 
 ;動画「douga2」
-[動画再生 str="hana.webm"]
+[動画再生 str="hana.webm" volume=30]
 
 ;暗転
 [暗転閉 haikei="black.png" time="2000"]
+[name_show]
 [暗転開 time="10"]
 
 #めのー
@@ -310,7 +375,7 @@
 
 ;暗転
 [暗転閉 haikei="black.png" time="10"]
-[暗転開 time="1000"]
+[暗転開 time="3000"]
 
 ;BGM シーンＦ
 [BGM storage="sceneF.ogg"]

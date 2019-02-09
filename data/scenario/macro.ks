@@ -48,11 +48,19 @@
 [macro name="立ち絵両困り"]
 [bg storage="002-04.png" time="%time|500"]
 [endmacro]
+[macro name="チョロミマン"]
+[bg storage="cman.png" time="%time|500"]
+[endmacro]
+[macro name="めのーマン"]
+[bg storage="mman.png" time="%time|500"]
+[endmacro]
+
 
 ;実績表示
 [macro name="実績出"]
 ;[image name="trf" storage="ArchivementFrame.png" layer=0 x=1280 y=-200 visible=true]
 [image name="trf" storage=%img layer=0 x=500 y=-200 visible=true zindex=100]
+[playse storage="se0.ogg" volume=100]
 [anim name="trf" left=-30 top=10 time=300]
 [endmacro]
 [macro name="実績消"]
@@ -61,12 +69,14 @@
 [endmacro]
 
 [macro name="チョロミカットイン"]
+[bg storage="10.png" time="%time|500"]
 [image name="cutin" storage="CutInChoromi.png" layer=1 x=30 y=-10 visible=true zindex=100]
 [anim name="cutin" left=0 top=0 time=500]
 [anim name="cutin" left=0 top=0 time=500]
 [anim name="cutin" opacity=0 time=500]
 [endmacro]
 [macro name="めのーカットイン"]
+[bg storage="11.png" time="%time|500"]
 [image name="cutin" storage="CutInMeno.png" layer=1 x=30 y=-10 visible=true zindex=100]
 [anim name="cutin" left=0 top=0 time=500]
 [anim name="cutin" left=0 top=0 time=500]
@@ -74,11 +84,22 @@
 [endmacro]
 
 [macro name="失敗"]
-[image name="fail" storage="Failure.png" layer=0 x=0 y=-720 width=1280 height=720 time=500 wait=false visible=true]
+[image name="fail" storage="Failure.png" layer=0 x=0 y=-720 width=1280 height=720 time=500 visible=true]
 [anim name="fail" width=1280 height=720 left=0 top=0 time=500]
 [anim name="fail" left=0 top=0 time=1000]
 [anim name="fail" opacity=0 time=500]
 ;[anim name="fail" width=2560 height=1440 left=-640 top=-360 opacity=0 time=200]
+[endmacro]
+
+[macro name="作戦"]
+[image name="sksn" storage=%storage layer=0 x=0 y=0 width=1280 height=720 time=500 wait=false visible=true]
+[anim name="sksn" left=0 top=0 time=2000]
+;[anim name="sksn" opacity=0 time=500]
+[endmacro]
+
+[macro name="レイヤ開放"]
+[freeimage layer=0]
+[wait time=1000]
 [endmacro]
 
 ;カメラ操作
