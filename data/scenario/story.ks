@@ -9,7 +9,7 @@
 [scenario_init haikei="white.png"]
 
 [jump target="*dbg"]
-
+*dbg
 
 
 ;シーンＡ
@@ -206,10 +206,17 @@
 #チョロミ
 …………。[p]
 
-*dbg
+;白転
+[暗転閉 grp="white.png" haikei="white.png" time="2000"]
+[暗転開 time="10"]
 
 #めのー
 私……チョロミちゃんのことが好きです。[p]
+
+;百合スチル
+[bgmovie storage="fuwa_back.webm"]
+[image storage="5.png" layer=0 x=0 y=0 time=1000 visible=true zindex=0]
+[layermode_movie video="fuwa_fore.webm" mode="screen"]
 
 ;BGM シーン百合
 [BGM storage="piano.ogg"]
@@ -264,13 +271,19 @@
 ……これは！[p]
 
 ;白転
-[暗転閉 haikei="white.png" time="2000"]
+[暗転閉 grp="white.png" haikei="white.png" time="2000"]
+
+;一枚絵消去
+[freeimage layer=0]
+[free_layermode]
+[stop_bgmovie]
+
 [暗転開 time="10"]
 
 ;シーンＦ
 
 ;動画「douga2」
-;[動画再生 str="hana.webm"]
+[動画再生 str="hana.webm"]
 
 ;暗転
 [暗転閉 haikei="black.png" time="2000"]

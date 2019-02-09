@@ -39,7 +39,7 @@
 ;実績表示
 [macro name="実績出"]
 ;[image name="trf" storage="ArchivementFrame.png" layer=0 x=1280 y=-200 visible=true]
-[image name="trf" storage=%img layer=0 x=500 y=-200 visible=true]
+[image name="trf" storage=%img layer=0 x=500 y=-200 visible=true zindex=100]
 [anim name="trf" left=-30 top=10 time=300]
 [endmacro]
 [macro name="実績消"]
@@ -95,7 +95,7 @@
 ;(「暗転閉」「暗転開」で１セット)
 [macro name="暗転閉"]
 ;背景画像表示
-[mask time=%time|2000]
+[mask graphic=%grp|black.png time=%time|2000]
 ;暗転時は全キャラを削除
 [chara_hide_all time=0]
 [bg storage=%haikei time="100"]
