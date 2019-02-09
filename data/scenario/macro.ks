@@ -4,7 +4,7 @@
 [macro name="name_tag"]
 ;キャラクターの名前が表示される文字領域
 [layopt layer=message1 visible=false]
-[position layer="message1" left=0 top=380 width=180 height=100 page=fore visible=true opacity="200" color="0xA9D0F5"]
+[position layer="message1" left=0 top=380 width=300 height=100 page=fore visible=true opacity="200" color="0xffc0cb"]
 [position layer="message1" margint="100" marginl="80" marginr="80" marginb="30"]
 [ptext name="chara_name_area" layer="message1" color="0x555555" size=60 x=30 y=390]
 ;上記で定義した領域がキャラクターの名前表示であることを宣言（これがないと#の部分でエラーになります）
@@ -136,7 +136,7 @@
 ;メッセージウィンドウの設定
 [position layer=message0 left=0 top=480 width=1280 height=200 page=fore visible=true opacity="150" color="0xEEEEEE"]
 [position layer=message0 margint="15" marginl="80" marginr="80" marginb="30"]
-[font size="48" color="0x222222"]
+[font size="40" color="0x222222"]
 [layopt layer=message0 visible=true]
 
 ;キャラクターの名前が表示される文字領域
@@ -175,6 +175,9 @@
 [bg storage=%str time="300"]
 [endmacro]
 
-
+;ムービー再生
+[macro name="動画再生"]
+[movie storage=%str skip=true volume=100]
+[endmacro]
 
 [return]

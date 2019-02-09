@@ -1,21 +1,38 @@
 
 ;ボイス設定
-;[voconfig sebuf="5" name="チョロミ" vostorage="{number}c.ogg" number="1"]
-;[voconfig sebuf="5" name="めのー" vostorage="{number}m.ogg" number="1"]
-;[vostart]
+[voconfig sebuf="5" name="チョロミ" vostorage="{number}c.ogg" number="1"]
+[voconfig sebuf="5" name="めのー" vostorage="{number}m.ogg" number="1"]
+[vostart]
 
 ;初期設定
 ;白背景（手のやつ）
-[scenario_init haikei="white.png"]
+[scenario_init haikei="black.png"]
 
 [jump target="*dbg"]
+
+
+
+;シーンＡ
+
+
+;動画「douga1」
+;[動画再生 str="hana.webm"]
+
+
+;シーンＢ
+
 *dbg
 
+[name_show]
 #チョロミ
 えっ……何？！　真っ暗になっちゃったよ？[p]
 
 #めのー
 ちょっとお待ちください……。[p]
+
+;立ち絵
+[暗転閉 haikei="white.png" time="1000"]
+[暗転開 time="1000"]
 
 #めのー
 ……わかりましたわ！　どうやらＶＲシステム自体がダウンしちゃってるみたいですわ。[p]
@@ -71,6 +88,12 @@
 #チョロミ
 私もだよ。頑張ろうね！[p]
 
+[暗転閉 haikei="black.png" time="1000"]
+
+;シーンＣ
+
+[暗転開 time="10"]
+
 #チョロミ
 わぁぁぁぁぁぁあぁぁぁぁっぁぁぁぁぁ！！！無理無理無理無理無理！！むーりぃー……[p]
 
@@ -103,6 +126,20 @@
 
 #めのー
 このままじゃ終われない！　どんな手段をとってでも目標達成させてもらいます！[p]
+
+
+;シーンＤ
+
+
+;シーンＥ
+
+[暗転閉 haikei="black.png" time="1000"]
+[暗転開 time="10"]
+
+;タイマー
+
+[暗転閉 haikei="black.png" time="1000"]
+[暗転開 time="10"]
 
 #めのー
 ……どうでした？[p]
@@ -176,11 +213,28 @@
 #めのー
 ……これは！[p]
 
+;白転
+[暗転閉 haikei="white.png" time="2000"]
+[暗転開 time="10"]
+
+;シーンＦ
+
+;動画「douga2」
+;[動画再生 str="hana.webm"]
+
+;暗転
+[暗転閉 haikei="black.png" time="2000"]
+[暗転開 time="10"]
+
 #めのー
 今回の出来事をきっかけにお互いの愛を確かめ合った僕とチョロミちゃん。[p]
 
 #めのー
 ワンチャンあるなら今だなと思い、僕はチョロミちゃんと直接会う約束をした。[p]
+
+;暗転
+[暗転閉 haikei="black.png" time="10"]
+[暗転開 time="1000"]
 
 #めのー
 チョロミちゃんは美少女……チョロミちゃんは美少女……チョロミちゃんは美少女……。[p]
@@ -200,6 +254,10 @@
 #めのー
 は？？？[p]
 
+;写真１
+[暗転閉 haikei="white.png" time="10"]
+[暗転開 time="2000"]
+
 #チョロミ
 中島ビル１０階ってここですよね。申し遅れました、チョロミって言います～。[p]
 
@@ -209,8 +267,16 @@
 #チョロミ
 ほ？[p]
 
+;写真１
+[暗転閉 haikei="white.png" time="1000"]
+[暗転開 time="10"]
+
 #めのー
 ほげえええええええええええぇぇぇぇぇぇぇぇ！！[p]
+
+;写真１
+[暗転閉 haikei="black.png" time="1000"]
+[暗転開 time="1000"]
 
 #めのー
 嘘だッ！！[p]
