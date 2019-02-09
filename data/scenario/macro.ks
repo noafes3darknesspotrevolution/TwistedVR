@@ -38,8 +38,9 @@
 
 ;実績表示
 [macro name="実績出"]
-[image name="trf" storage="ArchivementFrame.png" layer=0 x=1280 y=-200 visible=true]
-[anim name="trf" left=750 top=10 time=300]
+;[image name="trf" storage="ArchivementFrame.png" layer=0 x=1280 y=-200 visible=true]
+[image name="trf" storage=%img layer=0 x=500 y=-200 visible=true]
+[anim name="trf" left=-30 top=10 time=300]
 [endmacro]
 [macro name="実績消"]
 [anim name="trf" left=1280 top=-200 time=500]
