@@ -2,8 +2,8 @@
 [cm]
 
 @clearstack
-@bg storage ="title.jpg" time=100
-@wait time = 200
+@bg storage ="white.png" time=100
+@wait time = 10
 
 *start 
 
@@ -17,7 +17,7 @@
 
 *gamestart
 ;一番最初のシナリオファイルへジャンプする
-@jump storage="scene1.ks"
+@jump storage="story.ks"
 
 
 
