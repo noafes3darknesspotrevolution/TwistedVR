@@ -104,7 +104,7 @@
 [image name="fail" storage="Failure.png" layer=0 x=0 y=-720 width=1280 height=720 time=500 visible=true]
 [anim name="fail" width=1280 height=720 left=0 top=0 time=500]
 [SE storage="se4.ogg" volume="50"]
-[anim name="fail" left=0 top=0 time=1000]
+[anim name="fail" left=0 top=0 time=2000]
 [anim name="fail" opacity=0 time=500]
 ;[anim name="fail" width=2560 height=1440 left=-640 top=-360 opacity=0 time=200]
 [endmacro]

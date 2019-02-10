@@ -455,7 +455,8 @@
 は？？？[p]
 
 ;写真１
-[暗転閉 haikei="bill.jpg" time="10"]
+[暗転閉 haikei="s1.jpg" time="10"]
+#
 [暗転開 time="2000"]
 
 #チョロミ
@@ -487,7 +488,7 @@
 [実績消]
 
 ;写真
-[暗転閉 haikei="bill.jpg" time="1000"]
+[暗転閉 haikei="s2.jpg" time="1000"]
 [freeimage layer=0]
 #
 [暗転開 time="1000"]
