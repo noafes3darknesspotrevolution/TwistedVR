@@ -55,6 +55,10 @@
 #めのー
 それは……。[p]
 
+;立ち絵
+[暗転閉 haikei="13.png" time="1000"]
+[暗転開 time="1000"]
+
 ;BGM シーンＢ
 [BGM storage="sceneB.ogg"]
 
@@ -78,6 +82,11 @@
 #チョロミ
 今日のライブでその目標人数が突破できなければユニットは活動終了する。[p]
 
+;立ち絵
+[場面転換閉 haikei="12.png"]
+#
+[場面転換開 time="1000"]
+
 #めのー
 この僕、めのーは絶望していた。[p]
 
@@ -90,7 +99,7 @@
 #めのー
 復旧が終わっても日付が変わるまで１時間程しかライブの時間が取れないだろう。[p]
 
-[立ち絵チョロミ困り]
+[立ち絵チョロミ困り time="1000"]
 
 #めのー
 僕たち……ゲフンゲフン、私達はもう立ち止まるわけにはいかないわ。[p]
@@ -178,10 +187,11 @@
 [暗転開 time="2000"]
 
 ;SE:バン
-[SE storage="se2.ogg"]
+[SE storage="se2.ogg" volume="50"]
 [wait time="1000"]
 
-[暗転閉 haikei="10.png" time="1000"]
+;[暗転閉 haikei="10.png" time="1000"]
+[暗転閉 haikei="10-2.png" time="1000"]
 [layopt layer=message0 visible=true]
 [name_show]
 [暗転開 time="10"]
@@ -189,7 +199,7 @@
 ;シーンＤ
 
 ;BGM シーンＤ
-[BGM storage="sceneD.ogg" volume=10]
+[BGM storage="sceneD.ogg"]
 
 ;[name_hide]
 ;[layopt layer=message0 visible=false]
@@ -212,7 +222,8 @@
 [失敗]
 [p]
 
-[場面転換閉 haikei="11.png"]
+;[場面転換閉 haikei="11.png"]
+[場面転換閉 haikei="11-2.png"]
 [レイヤ開放]
 #
 [場面転換開 time="500"]
@@ -230,7 +241,8 @@
 [失敗]
 [p]
 
-[場面転換閉 haikei="10.png"]
+;[場面転換閉 haikei="10.png"]
+[場面転換閉 haikei="10-2.png"]
 [レイヤ開放]
 #
 [場面転換開 time="500"]
@@ -248,7 +260,8 @@
 [失敗]
 [p]
 
-[場面転換閉 haikei="11.png"]
+;[場面転換閉 haikei="11.png"]
+[場面転換閉 haikei="11-2.png"]
 [レイヤ開放]
 #
 [場面転換開 time="500"]
@@ -281,7 +294,7 @@
 [bg storage="RemainingTime.png" time="3000"]
 
 ;SE:バン
-[SE storage="se2.ogg"]
+[SE storage="se2.ogg" volume="50"]
 [wait time="1000"]
 
 [暗転閉 haikei="002-01.png" time="1000"]
@@ -526,3 +539,9 @@
 ど"ぉ"ぉ"お"し"て"だ"よ"ぉ"ぉ"ぉ"ぉ"ぉ"！[p]
 
 [BGMfadestop]
+
+;暗転
+[暗転閉 haikei="black.png" time="4000"]
+#
+
+[s]
