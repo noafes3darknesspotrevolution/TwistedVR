@@ -8,8 +8,10 @@
 ;白背景（手のやつ）
 [scenario_init haikei="white.png"]
 
+;デバッグ用
 [jump target="*dbg"]
-*dbg
+
+;[autostart]
 
 ;シーンＡ
 
@@ -320,6 +322,8 @@
 ;#チョロミ
 ;…………。[p]
 
+*dbg
+
 ;白転
 [暗転閉 grp="white.png" haikei="white.png" time="2000"]
 [暗転開 time="10"]
@@ -463,7 +467,7 @@
 
 ;実績：倒錯
 [実績出 img="ArchivementTwisted.png"]
-
+[wait time="3000"]
 [実績消]
 
 ;写真１

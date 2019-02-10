@@ -1,6 +1,6 @@
 ;一番最初に呼び出されるファイル
 
-[title name="yaminabe"]
+[title name="cholonmelon"]
 
 [stop_keyconfig]
 
