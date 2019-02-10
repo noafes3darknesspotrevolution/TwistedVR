@@ -291,7 +291,7 @@
 [暗転開 time="10"]
 
 ;タイマー
-[bg storage="RemainingTime.png" time="3000"]
+[bg storage="RemainingTime.png" time="2000"]
 
 ;SE:バン
 [SE storage="se2.ogg" volume="50"]
@@ -416,7 +416,7 @@
 ;シーンＦ
 
 ;動画「douga2」
-[動画再生 str="hana.webm" volume=30]
+[動画再生 str="sn.webm" volume=30]
 
 ;暗転
 [暗転閉 haikei="black.png" time="2000"]
@@ -430,8 +430,8 @@
 ワンチャンあるなら今だなと思い、僕はチョロミちゃんと直接会う約束をした。[p]
 
 ;暗転
-[暗転閉 haikei="black.png" time="10"]
-[暗転開 time="3000"]
+;[暗転閉 haikei="black.png" time="10"]
+;[暗転開 time="3000"]
 
 ;BGM シーンＦ
 [BGM storage="sceneF.ogg"]
@@ -455,7 +455,7 @@
 は？？？[p]
 
 ;写真１
-[暗転閉 haikei="white.png" time="10"]
+[暗転閉 haikei="bill.jpg" time="10"]
 [暗転開 time="2000"]
 
 #チョロミ
@@ -471,10 +471,11 @@
 
 ;写真１
 [暗転閉 grp="white.png" haikei="white.png" time="1000"]
+#
 [暗転開 time="10"]
 
 [image name="bill" storage="bill.jpg" layer=0 x=-1280 y=-720 width="3840" height="2160" time=1000 visible=true zindex=0]
-[anim name="bill" left=-1280 top=-720 time="800"]
+;[anim name="bill" left=-1280 top=-720 time="800"]
 [anim name="bill" left=0 top=0 width="1280" height="720" time="200"]
 
 #めのー
@@ -485,8 +486,8 @@
 [wait time="3000"]
 [実績消]
 
-;写真１
-[暗転閉 haikei="black.png" time="1000"]
+;写真
+[暗転閉 haikei="bill.jpg" time="1000"]
 [freeimage layer=0]
 #
 [暗転開 time="1000"]
