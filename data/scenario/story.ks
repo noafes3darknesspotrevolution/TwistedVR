@@ -177,6 +177,7 @@
 
 ;SE:バン
 [SE storage="se2.ogg"]
+[wait time="1000"]
 
 [暗転閉 haikei="10.png" time="1000"]
 [layopt layer=message0 visible=true]
@@ -211,7 +212,8 @@
 
 [場面転換閉 haikei="11.png"]
 [レイヤ開放]
-[場面転換開]
+#
+[場面転換開 time="500"]
 
 #めのー
 みくしぃの昔のネットの友人たちに呼びかけて協力してもらおう！
@@ -226,7 +228,10 @@
 [失敗]
 [p]
 
+[場面転換閉 haikei="10.png"]
 [レイヤ開放]
+#
+[場面転換開 time="500"]
 
 #チョロミ
 そうや！　えっちな自撮り写真で観客を吊り上げるんや！
@@ -241,7 +246,10 @@
 [失敗]
 [p]
 
+[場面転換閉 haikei="11.png"]
 [レイヤ開放]
+#
+[場面転換開 time="500"]
 
 #めのー
 ネットの友人がダメならリアルの知り合いを当たればいいじゃないか！
@@ -269,6 +277,10 @@
 
 ;タイマー
 [bg storage="RemainingTime.png" time="3000"]
+
+;SE:バン
+[SE storage="se2.ogg"]
+[wait time="1000"]
 
 [暗転閉 haikei="002-01.png" time="1000"]
 [layopt layer=message0 visible=true]

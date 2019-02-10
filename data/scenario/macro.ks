@@ -34,6 +34,21 @@
 [BGMvoldn]
 [endmacro]
 
+;BGM再生
+[macro name="BGM"]
+[playbgm storage=%storage volume=%volume|100]
+[endmacro]
+
+;BGMフェードストップ
+[macro name="BGMfadestop"]
+[fadeoutbgm time=%time|1000]
+[endmacro]
+
+;SE再生
+[macro name="SE"]
+[playse storage=%storage volume=%volume|100]
+[endmacro]
+
 ;	演出関連
 
 [macro name="立ち絵通常"]
@@ -71,6 +86,7 @@
 [macro name="チョロミカットイン"]
 ;[bg storage="10.png" time="%time|10"]
 [image name="cutin" storage="CutInChoromi.png" layer=1 x=30 y=-10 visible=true zindex=100]
+[SE storage="se3.ogg"]
 [anim name="cutin" left=0 top=0 time=500]
 [anim name="cutin" left=0 top=0 time=500]
 [anim name="cutin" opacity=0 time=500]
@@ -78,6 +94,7 @@
 [macro name="めのーカットイン"]
 ;[bg storage="11.png" time="%time|10"]
 [image name="cutin" storage="CutInMeno.png" layer=1 x=30 y=-10 visible=true zindex=100]
+[SE storage="se3.ogg"]
 [anim name="cutin" left=0 top=0 time=500]
 [anim name="cutin" left=0 top=0 time=500]
 [anim name="cutin" opacity=0 time=500]
@@ -86,6 +103,7 @@
 [macro name="失敗"]
 [image name="fail" storage="Failure.png" layer=0 x=0 y=-720 width=1280 height=720 time=500 visible=true]
 [anim name="fail" width=1280 height=720 left=0 top=0 time=500]
+[SE storage="se4.ogg" volume="50"]
 [anim name="fail" left=0 top=0 time=1000]
 [anim name="fail" opacity=0 time=500]
 ;[anim name="fail" width=2560 height=1440 left=-640 top=-360 opacity=0 time=200]
@@ -210,21 +228,6 @@
 #
 
 [mask_off time=1000]
-[endmacro]
-
-;BGM再生
-[macro name="BGM"]
-[playbgm storage=%storage volume=%volume|100]
-[endmacro]
-
-;BGMフェードストップ
-[macro name="BGMfadestop"]
-[fadeoutbgm time=%time|1000]
-[endmacro]
-
-;SE再生
-[macro name="SE"]
-[playse storage=%storage volume=%volume|100]
 [endmacro]
 
 ;日記表示マクロ
