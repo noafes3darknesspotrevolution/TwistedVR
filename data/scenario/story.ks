@@ -115,7 +115,7 @@
 
 [BGMfadestop]
 
-[wait time="1000"]
+[wait time="3000"]
 
 ;SE:通信切れる音
 [SE storage="se1.ogg"]
@@ -170,7 +170,17 @@
 
 [stopbgm]
 
+[暗転閉 haikei="GatherAudience.png" time="3000"]
+[name_hide]
+[layopt layer=message0 visible=false]
+[暗転開 time="2000"]
+
+;SE:バン
+[SE storage="se2.ogg"]
+
 [暗転閉 haikei="10.png" time="1000"]
+[layopt layer=message0 visible=true]
+[name_show]
 [暗転開 time="10"]
 
 ;シーンＤ
@@ -178,72 +188,93 @@
 ;BGM シーンＤ
 [BGM storage="sceneD.ogg" volume=10]
 
-[name_hide]
-[layopt layer=message0 visible=false]
+;[name_hide]
+;[layopt layer=message0 visible=false]
 
 #チョロミ
+まずはTmitterで宣伝や！
+
 [チョロミカットイン]
-[l]
+[p]
 
 #チョロミ
+ＢＯＴ使って告知でタイムライン埋め尽くすんや！
+
 [作戦 storage="sksn01.png"]
-[l]
+[p]
 
 #チョロミ
-[失敗]
-[l]
+あかん！　連投しすぎてアカウントが凍結されてしもたぁ！
 
+[失敗]
+[p]
+
+[場面転換閉 haikei="11.png"]
 [レイヤ開放]
+[場面転換開]
 
 #めのー
+みくしぃの昔のネットの友人たちに呼びかけて協力してもらおう！
+
 [めのーカットイン]
 [作戦 storage="sksn02.png"]
-[l]
+[p]
 
 #めのー
+あれっ？　あれっ？？　ログインのアドレスもパスワードもわからない……！！
+
 [失敗]
-[l]
+[p]
 
 [レイヤ開放]
 
 #チョロミ
+そうや！　えっちな自撮り写真で観客を吊り上げるんや！
+
 [チョロミカットイン]
 [作戦 storage="sksn03.png"]
-[l]
+[p]
 
 #チョロミ
+男がえっちな自撮り写真撮ってどうすんねん……
+
 [失敗]
-[l]
+[p]
 
 [レイヤ開放]
 
 #めのー
+ネットの友人がダメならリアルの知り合いを当たればいいじゃないか！
+
 [めのーカットイン]
 [作戦 storage="sksn04.png"]
-[l]
+[p]
 
 #めのー
+ＶＲアイドルやってるって電話したら……親に泣かれた……。
+
 [失敗]
-[l]
+[p]
 
 [レイヤ開放]
 
 ;シーンＥ
 
 [暗転閉 haikei="black.png" time="1000"]
+[name_hide]
+[layopt layer=message0 visible=false]
 [暗転開 time="10"]
 
 [BGMfadestop]
 
 ;タイマー
-[bg storage="black.png" time="10"]
-
-
+[bg storage="RemainingTime.png" time="3000"]
 
 [暗転閉 haikei="002-01.png" time="1000"]
 [layopt layer=message0 visible=true]
 [暗転開 time="10"]
 
+[name_show]
 #めのー
 ……どうでした？[p]
 
