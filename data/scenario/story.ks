@@ -10,7 +10,7 @@
 
 ;デバッグ用
 [jump target="*dbg"]
-
+*dbg
 ;[autostart]
 
 ;シーンＡ
@@ -321,8 +321,6 @@
 
 ;#チョロミ
 ;…………。[p]
-
-*dbg
 
 ;白転
 [暗転閉 grp="white.png" haikei="white.png" time="2000"]
